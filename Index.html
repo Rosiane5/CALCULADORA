@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <main>
+    <section class="container">
+        <h2>Simple Calculator </h2>
+        
+        <input id="num-one" name="num-one" type="number" placeholder="Digite um número"/><br>
+       
+        <select id="operation" name="operation" title="Escolha uma operação" required>
+            <option value="add">+</option>
+            <option value="subt">-</option>
+            <option value="mult">*</option>
+            <option value="div">/</option>  
+        </select><br>
+        
+        <input id="num-two" name="num-two" type="number" placeholder="Digite o segundo numero"/><br><br>
+        <button id="button" onclick="outcome()" type="button" >Calcular</button><br><br>
+        
+        <div id="resultArea" ></div>
+    </section>
+
+   </main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
